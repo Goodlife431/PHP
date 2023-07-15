@@ -310,6 +310,20 @@ i - Minutes with leading zeros (00 to 59)
 s - Seconds with leading zeros (00 to 59)
 a - Lowercase Ante meridiem and Post meridiem (am or pm)
 
+Create a Date From a String With strtotime()
+The PHP strtotime() function is used to convert a human readable date string into a Unix timestamp (the number of seconds since January 1 1970 00:00:00 GMT).
+
+Syntax
+strtotime(time, now)
+
+PHP GET METHOD
+
+the get method send user encoded user informaion aooended to the page request 
+
+-It builds long strings that appear in the string logs 
+-It has restriction of sending only 1024 charaters only
+-Do not use Get method incase you want to share confidental information
+
 
 
 
