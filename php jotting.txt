@@ -320,13 +320,21 @@ PHP GET METHOD
 
 the get method send user encoded user informaion aooended to the page request 
 
--It builds long strings that appear in the string logs 
+-It builds long strings that appear in the string logs In PHP, isset() is a language construct used to determine if a variable is set and not null. It checks whether a variable or an array element exists and has a non-null value.
 -It has restriction of sending only 1024 charaters only
 -Do not use Get method incase you want to share confidental information
 -The get method can not be used to share images or word document to the server 
 -The data sent by the get method can be accesed using query_strings environmental variables 
 
 In PHP, isset() is a language construct used to determine if a variable is set and not null. It checks whether a variable or an array element exists and has a non-null value.
+
+POST METHOD
+
+The post method sends information via http headers
+-Do not have any restriction on data size to be sent 
+-It is used to send ascii as well as images and document 
+-The infromation sent via post method is secuered 
+
 
 
 
