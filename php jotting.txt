@@ -326,6 +326,8 @@ the get method send user encoded user informaion aooended to the page request
 -The get method can not be used to share images or word document to the server 
 -The data sent by the get method can be accesed using query_strings environmental variables 
 
+In PHP, isset() is a language construct used to determine if a variable is set and not null. It checks whether a variable or an array element exists and has a non-null value.
+
 
 
 
