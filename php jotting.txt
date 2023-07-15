@@ -323,6 +323,7 @@ the get method send user encoded user informaion aooended to the page request
 -It builds long strings that appear in the string logs 
 -It has restriction of sending only 1024 charaters only
 -Do not use Get method incase you want to share confidental information
+-The get method can not be used to share images or word document to the server 
 
 
 
