@@ -10,7 +10,7 @@
             $this->color = $color;
         }
         public function intro() {
-            echo "A {this->name} is a fruit and the color of the fruit is {this->color}.";
+            echo "A {$this->name} is a fruit and the color of the fruit is {$this->color}.";
         }
     }
     class Cherry extends fruit{
