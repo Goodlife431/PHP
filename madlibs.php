@@ -7,12 +7,14 @@
 </head>
 <body>
     <form action="madlibs.php" method="get">
-        color: <br>
+        color: 
         <input type="text" name="color">
-        Plural Noun: <br>
+        Plural Noun:
         <input type="text" name="PluralNoun">
-        Celebrity: <br>
+        Celebrity: 
         <input type="text" name="celebrity">
+
+        <input type="submit"
     </form>
 
     <?php
