@@ -9,11 +9,13 @@
     <form action="madlibs.php" method="get">
         color: 
         <input type="text" name="color">
+        <br>
         Plural Noun:
         <input type="text" name="PluralNoun">
+        <br>
         Celebrity: 
         <input type="text" name="celebrity">
-
+        <br>
         <input type="submit"
     </form>
 
