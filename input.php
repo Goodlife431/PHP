@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="connect.php" method="GET">
+    <form action="input.php" method="GET">
         <br>
         Name: <input type="text" name="username">
         <br>
