@@ -16,7 +16,9 @@
         Celebrity: 
         <input type="text" name="celebrity">
         <br>
-        <input type="submit"
+        <input type="submit">
+        <br>
+        <br>
     </form>
 
     <?php
