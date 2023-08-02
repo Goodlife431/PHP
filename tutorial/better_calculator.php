@@ -19,13 +19,13 @@
     $op = $_POST["op"];
 
     if($op == "+"){
-        $num1 + $num2;
+        echo $num1 + $num2;
     }elseif($op == "-"){
-        $num1 - $num2;
+        echo $num1 - $num2;
     }elseif($op == "*"){
-        $num1 * $num2;
+        echo $num1 * $num2;
     }elseif($op == "/"){
-        $num1 / $num2;
+        echo $num1 / $num2;
     }else{
         echo "Invalid operator";
     }
