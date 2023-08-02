@@ -18,20 +18,20 @@
         case "A":
             echo "You did amazing";
             break;
-        // case "B":
-        //     echo "You did pretty Good";
-        //     break;
-        // case "C":
-        //     echo "You did poorly";
-        //     break;
-        // case "D":
-        //     echo "You did very badly";
-        //     break;
-        // case "F":
-        //     echo "You Failed";
-        //     break;
-        // default: 
-        //     echo "Invalid input";
+        case "B":
+            echo "You did pretty Good";
+            break;
+        case "C":
+            echo "You did poorly";
+            break;
+        case "D":
+            echo "You did very badly";
+            break;
+        case "F":
+            echo "You Failed";
+            break;
+        default: 
+            echo "Invalid input";
     }
     ?>
 </body>
