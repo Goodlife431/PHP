@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php 
-    $ismale = false;
+    $ismale = true;
     $isTall = true;
 
     if($ismale && $isTall){
