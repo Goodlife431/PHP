@@ -9,11 +9,13 @@
     <?php 
     
      function sayhi($name, $age){
-        echo "Welcome to my new function";
+        echo "Hello $name you are $age <br>";
      };
      
      sayhi("seun", 21);
+     
      sayhi("Bimbo", 45);
+
      sayhi("Sikiru", 55)
     ?>
 </body>
