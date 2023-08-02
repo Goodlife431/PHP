@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="associatuve_array.php" method="post">
+    <form action="associative_array.php" method="post">
         <input type="text" name="students"> <br>
         <input type="submit">
     </form>
