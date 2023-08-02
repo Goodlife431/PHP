@@ -7,7 +7,8 @@
 </head>
 <body>
     <form action="switch.php" name="post">
-        <input type="text" name="grade"><br>
+        What was your grade?
+        <input type="text" name="grade"> <br>
         <input type="submit">
     </form>
 
@@ -17,20 +18,20 @@
         case "A":
             echo "You did amazing";
             break;
-        case "B":
-            echo "You did pretty Good";
-            break;
-        case "C":
-            echo "You did poorly";
-            break;
-         case "D":
-            echo "You did very badly";
-            break;
-         case "F":
-            echo "You Failed";
-            break;
-        default: 
-            echo "Invalid input";
+        // case "B":
+        //     echo "You did pretty Good";
+        //     break;
+        // case "C":
+        //     echo "You did poorly";
+        //     break;
+        // case "D":
+        //     echo "You did very badly";
+        //     break;
+        // case "F":
+        //     echo "You Failed";
+        //     break;
+        // default: 
+        //     echo "Invalid input";
     }
     ?>
 </body>
