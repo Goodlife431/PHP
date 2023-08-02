@@ -7,9 +7,9 @@
 </head>
 <body>
     <form action="better_calculator.php" method="post">
-        number 1: <input type="number" name="num1"> <br>
+        number 1: <input type="number" step="0.001" name="num1" > <br>
         OP: <input type="text" name="op"><br>
-        number 2: <input type="number" name="num2"> <br>
+        number 2: <input type="number" step="0.001" name="num2"> <br>
         <input type="submit">
     </form>
 
