@@ -10,17 +10,17 @@
     #loops 
     #for each 
 
-    $fruits = ["Bananas", "Apples", "Oranges"];
-    foreach ($fruits as $i => $fruits) {
-        # code...
-        echo $i . " " . $fruits . "<br>";
-    }
+    // $fruits = ["Bananas", "Apples", "Oranges"];
+    // foreach ($fruits as $i => $fruits) {
+    //     # code...
+    //     echo $i . " " . $fruits . "<br>";
+    // }
     #iterate over associative array
     $persons = [
         'name' => "Seun",
         'suranme' => "Traverse",
         'age' => 30,
-        'hobbies' => ['Tennis', 'video games'];
+        'hobbies' => ['Tennis', 'video games']
     ];
     foreach($persons as $key => $value){
         if($key === 'hobbies') break;
