@@ -15,6 +15,17 @@
         # code...
         echo $i . " " . $fruits . "<br>";
     }
+    #iterate over associative array
+    $persons = [
+        'name' => "Seun",
+        'suranme' => "Traverse",
+        'age' => 30,
+        'hobbies' => ['Tennis', 'video games'];
+    ];
+    foreach($persons as $key => $value){
+        if($key === 'hobbies') break;
+        echo $value . '<br>';
+    }
     ?>
 </body>
 </html>
