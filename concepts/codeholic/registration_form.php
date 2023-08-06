@@ -1,3 +1,9 @@
+<?php 
+echo 'prev';
+var_dump($_POST);
+echo 'prev';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<form action="" method="post" novalidate>
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -32,8 +39,13 @@
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control" required>
               </div>
               <div class="form-group">
+                <label for="cv_link">CV Link</label>
+                <input type="url" name="cv_link" id="cv_link" class="form-control" placeholder="https://example.com/path/to/your/cv.pdf">
+              </div>
+              <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Register</button>
               </div>
+            </form>
             </form>
           </div>
         </div>
