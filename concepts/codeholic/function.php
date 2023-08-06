@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    // create function to sum all numbers ...$numbers
     <?php 
+    //create function to sum all numbers ...$numbers
     function sum(...$numbers){
         $total = 0;
        foreach($numbers as $num) $total += $num;

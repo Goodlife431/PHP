@@ -7,7 +7,10 @@
 </head>
 <body>
     <?php 
+    // print current date stamp
     echo time(). '<br>';
+    //print current date 
+    echo date('Y-m-d H:i:s'). '<br>';
     ?>
 </body>
 </html>
