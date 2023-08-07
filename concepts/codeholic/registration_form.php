@@ -1,7 +1,11 @@
 <?php 
-echo '<prev>';
-var_dump($_POST);
-echo '</prev>';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+  $username = $_POST['username']; 
+  echo '<pre>';
+  var_dump($username);
+  echo '</pre>';
+}
 ?>
 
 <!DOCTYPE html>
