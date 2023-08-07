@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $username = post_data('username');
   $email = post_data('email');
   $password = post_data('password');
-  $confirm_password = post_data('confirm_passoword');
+  $confirm_password = post_data('confirm_password');
   $cv_link = post_data('cv_link');
   
   echo '<pre>';
@@ -26,6 +26,7 @@ function post_data($field){
   // }
   // $data = $_POST[$field];
   $_POST[$field] ??= "";
+
 
   return htmlspecialchars(stripslashes($_POST[$field]));
 }
