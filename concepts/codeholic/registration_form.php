@@ -1,14 +1,33 @@
 <?php 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-  echo '<pre>';
-  var_dump($_POST);
-  echo '</pre>';
+  // echo '<pre>';
+  // var_dump($_POST);
+  // echo '</pre>';
 
-  $username = $_POST['username']; 
+  // $username = $_POST['username']; 
+  // echo '<pre>';
+  // var_dump($username);
+  // echo '</pre>';
+
+  $username = post_data('username');
+  $email = post_data('email');
+  $password = post_data('password');
+  $confirm_password = post_data('confirm_passoword');
+  $cv_link = post_data('cv_link');
+  
   echo '<pre>';
-  var_dump($username);
+  var_dump($username,$email,$password, $confirm_password, $cv_link);
   echo '</pre>';
+}
+function post_data($field){
+  // if (isset($_POST[$field])){
+  //   return false;
+  // }
+  // $data = $_POST[$field];
+  $_POST[$field] ??= "";
+
+  return htmlspecialchars(stripslashes($_POST[$field]));
 }
 ?>
 
