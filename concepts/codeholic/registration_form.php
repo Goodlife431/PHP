@@ -37,6 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (!$confirm_password) {
     $errors['confirm_password'] = REQUIRED_FIELD_ERROR;
   }
+  if($password && $confirm_password && strcmp($password, $confirm_password) !==0){
+    $errors['confirm_password'] = 'This must match the password field';
+  }
   if (!$cv_link) {
     $errors['cv_link'] = REQUIRED_FIELD_ERROR;
   }
