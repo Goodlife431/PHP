@@ -40,8 +40,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if($password && $confirm_password && strcmp($password, $confirm_password) !==0){
     $errors['confirm_password'] = 'This must match the password field';
   }
-  if (!$cv_link) {
-    $errors['cv_link'] = REQUIRED_FIELD_ERROR;
+  if ($cv_link && !filter_var($cv_link, FILTER_VALIDATE_URL)) {
+    $errors['cv_link'] = 'Please provide a valid link';
+  }
+  if(empty($errors)){
+    echo "Everything is good";
   }
 }
 function post_data($field)

@@ -335,6 +335,8 @@ The post method sends information via http headers
 -It is used to send ascii as well as images and document 
 -The infromation sent via post method is secuered 
 
+COOKIES AND SESSIONS
+They give you possibility to store informaion in user browser side or server side.
 
 
 
