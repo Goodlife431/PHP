@@ -25,7 +25,7 @@ move_uploaded_file($_FILES['file']['tmp_name'], $_FILES['file']['name']);
 <body>
     <p> <?php echo $errorMessage ?></p>
     <form action="" method="post" enctype="multipart/form-data">
-        <input type="file" name="name"><br>
+        <input type="file" name="file"><br>
         <button>submit</button>
     </form>
 </body>
