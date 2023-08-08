@@ -337,7 +337,9 @@ The post method sends information via http headers
 
 COOKIES AND SESSIONS
 They give you possibility to store informaion in user browser side or server side.
-
+-COOKIES store informaion in the user browser side 
+-SESSIONS stores information in the server side and gives it a unique id.
+Note: Based on the sessions the user can understand who the browser is .
 
 
 
