@@ -8,10 +8,17 @@ if(isset($_FILES['file'])){
 
 
 $file = $_FILES['file'];
+
+$ext = pathinfo($file['name'], PATHINFO_EXTENSION);
+
     if($file['size'] > 5 * 1024 * 1024){
         $errorMessage = 'You can upload more than 5mb files';
+}elseif(!in_array($ext, ['png','jpeg', 'svg', 'jpg'])){
+$errorMessage = "You can only upload images";
+}else{
+    move_uploaded_file($_FILES['file']['tmp_name'], $_FILES['file']['name']);
 }
-move_uploaded_file($_FILES['file']['tmp_name'], $_FILES['file']['name']);
+
 }
 
 ?>
