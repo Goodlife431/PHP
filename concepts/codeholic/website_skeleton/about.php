@@ -8,7 +8,7 @@
 <body>
     <header>
         <a href="index.php">Home</a>
-        <a href="about.php">Home</a>
+        <a href="about.php">About</a>
     </header>
     <h1>About us</h1>
 

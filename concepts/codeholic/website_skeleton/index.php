@@ -8,7 +8,7 @@
 <body>
     <header>
         <a href="index.php">Home</a>
-        <a href="about.php">Home</a>
+        <a href="about.php">About</a>
     </header>
     <h3> Abuja Wuse 5&#8451; </h3>
     <h1> Welcome to my cool website </h1>
