@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="newtodo.php" method="post">
         <input type="text" name="todolist" placeholder="enter your todo">
         <button>New todo</button>
     </form>
