@@ -1,5 +1,11 @@
 {
+    "buy new monitor": {
+        "completed": false
+    },
     "finish php tutorials": {
+        "completed": false
+    },
+    "call mom": {
         "completed": false
     }
 }

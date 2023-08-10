@@ -24,16 +24,28 @@ if (file_exists('todo.json')) {
 
     <?php foreach ($todos as $todoName => $todo) { ?>
         <div style="margin-bottom: 20px;">
-            <input type="checkbox" <?php echo $todo['completed'] ? 'checked' : '' ?>>
-            <?php echo $todoName ?>
+            <form style="display: inline-block" action="change_status.php" method="post">
+                <input type="hidden" name="todo_name" value="<?php echo $todoName ?>">
+                <input type="checkbox" <?php echo $todo['completed'] ? 'checked' : '' ?>>
+                <?php echo $todoName ?>
+            </form>
             <form style="display:inline-block" action="delete.php" method="post">
                 <input type="hidden" name="todo_name" value="<?php echo $todoName ?>">
                 <button>delete</button>
             </form>
         </div
+<!-- <?php } ?> -->
 
+<script>
 
-    <?php } ?>
+        const checkboxs = document.querySelectorAll('input[type=checkbox]');
+        checkboxs.forEach(ch => {
+            ch.onclick = function () {
+                this.parentNode.submit();
+            };
+        })
+
+</script>
 </body>
 
 </html>
