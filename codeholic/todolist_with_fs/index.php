@@ -1,5 +1,9 @@
 <?php 
-
+$todos = [];
+if(file_exists('todo.json')){
+    $json = file_get_contents('todo.json');
+    $todos = json_decode($json);
+}
 
 ?>
 
@@ -15,5 +19,16 @@
         <input type="text" name="todolist" placeholder="enter your todo">
         <button>New todo</button>
     </form>
+
+<?php 
+foreach($todos as $todoName => $todo); ?>
+    <div>
+        <input type="checkbox" <?php echo $todo['completed'] ? 'checked' : '' ?> >
+        <?php echo $todoName?>
+        <button>delete</button>
+    </div>
+
+<?php T_ENDFOREACH; ?>
 </body>
 </html>
+

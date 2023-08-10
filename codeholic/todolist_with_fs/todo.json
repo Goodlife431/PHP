@@ -1,9 +1,9 @@
 {
-    "todo item1": {
-        "completed": true
+    "buy new monitor": {
+        "completed": false
     },
-    "todo item2": {
-        "completed": true
+    "finish php tutorials": {
+        "completed": false
     },
     "call mom": {
         "completed": false
