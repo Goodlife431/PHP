@@ -1,3 +1,11 @@
+<?php 
+
+$pdo = new PDO('mysql:host=localhost:81;port=3307;dbname=notes', 'root', '');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +23,8 @@
                 placeholder="Note description"></textarea>
             <button>New note</button>
         </form>
-        <div class="note">
+    <div class="notes">
+        <!-- <div class="note">
             <div class="title">
                 <a href="">Sample note</a>
             </div>
@@ -24,7 +33,8 @@
             </div>
             <small>15/10/2023 14:00</small>
             <button class="close">X</button>
-        </div>
+            </div>
+        </div> -->
     </div>
 </body>
 </html>
