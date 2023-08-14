@@ -1,16 +1,14 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Toluwani431$;";
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=notes", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
+require_once './connection.php';
+
+$connection = new Connection();
+
+$notes = $connection->getNotes();
+
+// echo '<pre>';
+// var_dump($notes);
+// echo '</pre>';
 
 ?>
 
@@ -34,7 +32,8 @@ try {
             <button>New note</button>
         </form>
         <div class="notes">
-            <div class="note">
+            <div class="note"> $this->pdo
+                <?php foreach ($notes as $note): ?>
                 <div class="title">
                     <a href="">Sample note</a>
                 </div>
@@ -44,6 +43,7 @@ try {
                 <small>15/10/2023 14:00</small>
                 <button class="close">X</button>
             </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </body>
