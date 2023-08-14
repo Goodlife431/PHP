@@ -2,7 +2,7 @@
 
 class Car{
 
-    private $color  = 'ge';
+    private $color  = 'green';
     public $weight;
     private $year;
     private $available = ['red', 'white', 'blue', 'yellow'];
@@ -26,9 +26,10 @@ class Car{
 
 $myCar = new Car();
 $myCar->setYear('2020');
-$myCar->setColor('green');
+$myCar->setColor('white');
 
-echo $myCar->getColor()
+echo $myCar->getColor();
+echo $myCar->getYear();
 
 
 
