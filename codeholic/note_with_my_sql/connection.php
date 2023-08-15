@@ -46,7 +46,7 @@ class Connection {
 
     public function updateNote($id, $note){
 
-      $statement = $this->pdo->prepare('UPDATE note set title = :title, description = :description WHERE  id = :id');
+      $statement = $this->pdo->prepare('UPDATE notes set title = :title, description = :description WHERE  id = :id');
       $statement->bindValue('id', $id);
       $statement->bindValue('title', $note['title']);
       $statement->bindValue('description', $note['description']);
