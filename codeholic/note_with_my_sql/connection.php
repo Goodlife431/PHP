@@ -36,6 +36,13 @@ class Connection {
       $statement->bindValue('create_date', date('Y:m:d H:i:s'));
       return $statement->execute();
     }
+
+    public function getNotesById($id){
+      $statement = $this->pdo->prepare('SELECT FROM notes WHERE id = :id');
+      $statement->bindValue('id', $id);
+      $statement->execute();
+      return $statement->fetch(PDO::FETCH_ASSOC);
+    }
    
 }
 

@@ -26,7 +26,7 @@ body {
     justify-content: center;
 }
 .note {
-    background-color: blanchedalmond;
+    background-color: yellow;
     color: black;
     width: 300px;
     display: inline-block;
@@ -38,6 +38,7 @@ body {
 .note .title{
     margin-bottom: 10px;
     font-weight: bold;
+    
 }
 .note .title a {
     color: black;
