@@ -57,7 +57,10 @@ if(isset($_GET['id'])){
                 <div class="description"><?php echo $note['description']?>
                 </div>
                 <small><?php echo $note['create_date'] ?></small>
+                <form action="delete.php" method="post">
                 <button class="close">X</button>
+                <input type="hidden" name="id" value="<?php echo $note['id'] ?>">
+                </form>
             </div>
             <?php endforeach; ?>
         </div>
