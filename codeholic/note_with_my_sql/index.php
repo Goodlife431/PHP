@@ -1,8 +1,6 @@
 <?php
 
-require_once './connection.php';
-
-$connection = new Connection();
+$connection = require_once './connection.php';
 
 $notes = $connection->getNotes();
 
@@ -27,20 +25,20 @@ $notes = $connection->getNotes();
     <div>
         <form action="create.php" class="new-note" method="post">
             <input type="hidden" name="id">
-            <input type="text" name="title" placeholder="Note title" autocomplete="on">
+            <input type="text" name="title" placeholder="Note title" autocomplete="off">
             <textarea name="description" cols="30" rows="4" placeholder="Note description"></textarea>
             <button>New note</button>
         </form>
         <div class="notes">
-            <div class="note"> $this->pdo
-                <?php foreach ($notes as $note): ?>
-                <div class="title">
-                    <a href="">Sample note</a>
+            <?php foreach ($notes as $note): ?>
+                <div class="note">
+                    <div class="title">
+                        <a href="" <?php echo $note['title'] ?>></a>
                 </div>
                 <div class="description">
-                    Sample note description
+                    <?php echo $note['description'] ?>
                 </div>
-                <small>15/10/2023 14:00</small>
+                <small><?php echo $note['create_date'] ?></small>
                 <button class="close">X</button>
             </div>
             <?php endforeach; ?>
