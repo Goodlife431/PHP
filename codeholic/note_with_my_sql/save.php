@@ -5,7 +5,13 @@
 
 $connection = require_once './connection.php';
 
-$connection->addNotes($_POST);
+$id = $_POST['id'] ?? '';
+if ($id){
+    $connection->updateNote($id, $_POST);
+}else{
+    $connection->addNotes($_POST);
+}
+
 
 header('location: index.php');
 ?>
