@@ -32,7 +32,7 @@ if(isset($_GET['id'])){
 
 <body>
     <div>
-        <form action="create.php" class="new-note" method="post">
+        <form action="save.php" class="new-note" method="post">
             <input type="hidden" name="id" value="<?php echo $currentNote['id'] ?>">
             <input type="text" name="title" placeholder="Note title" autocomplete="off"
             value="<?php echo $currentNote['title'] ?>">
