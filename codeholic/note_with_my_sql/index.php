@@ -40,7 +40,7 @@ if(isset($_GET['id'])){
                 <?php echo $currentNote['description']?>
             </textarea>
             <button>
-                <?php if(isset($currentNote['id'])): ?>
+                <?php if($currentNote['id']): ?>
                 Update Note
                 <?php else: ?>
                 New note
@@ -54,8 +54,7 @@ if(isset($_GET['id'])){
                         <a href="?id=<?php echo $note['id'] ?>">
                         <?php echo $note['title'] ?> </a>
                 </div>
-                <div class="description">
-                    <?php echo $note['description'] ?>
+                <div class="description"><?php echo $note['description']?>
                 </div>
                 <small><?php echo $note['create_date'] ?></small>
                 <button class="close">X</button>
