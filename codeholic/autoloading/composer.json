@@ -1,0 +1,17 @@
+{
+    "name": "goodlife431/autoloading",
+    "autoload": {
+        "psr-4": {
+            "Goodlife431\\Autoloading\\": "src/"
+        }
+    },
+
+    "authors": [
+        {
+            "name": "Goodlife",
+            "email": "oduwolejohn431@gmail.com"
+        }
+    ],
+    "require": {}
+    
+}
