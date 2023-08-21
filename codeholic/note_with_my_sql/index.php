@@ -17,6 +17,7 @@ $currentNote = [
 if(isset($_GET['id'])){
     $currentNote = $connection->getNotesById($_GET['id']);
 }
+
 ?>
 
 
