@@ -60,15 +60,21 @@ class Employee extends Person{
 }
 
 
+class Student extends Person{
+
+    public $studentNo;
+    public function __construct($name, $age, $phone, $studentNo){
+        parent::__construct($name, $age, $phone);
+        $this->studentNo = $studentNo;
+    }
+
+}
+
 $employee = new Employee("John", 21 ,"08123940220", 2000);
 
 
 echo $employee->hello().PHP_EOL;
 
-
-class Student{
-    
-}
-
+$student = new Student('shola', 15, '81176781798', 654)
 
 ?>
