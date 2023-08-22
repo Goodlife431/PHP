@@ -66,7 +66,9 @@ $employee = new Employee("John", 21 ,"08123940220", 2000);
 echo $employee->hello().PHP_EOL;
 
 
-
+class Student{
+    
+}
 
 
 ?>
