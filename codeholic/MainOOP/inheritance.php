@@ -75,6 +75,8 @@ $employee = new Employee("John", 21 ,"08123940220", 2000);
 
 echo $employee->hello().PHP_EOL;
 
-$student = new Student('shola', 15, '81176781798', 654)
+$student = new Student('shola', 15, '81176781798', 654);
+
+echo $student->
 
 ?>
