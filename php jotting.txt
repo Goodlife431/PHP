@@ -342,7 +342,8 @@ They give you possibility to store informaion in user browser side or server sid
 Note: Based on the sessions the user can understand who the browser is .
 
 
-
+Interface is provided so you can describe a set of functions and then hide the final implementions of those functions
+in an implementing class. This allows you to change the implementions of those functions without changin how to use it.
 
 
 
