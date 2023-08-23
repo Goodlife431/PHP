@@ -2,7 +2,7 @@
 
 require_once 'CacheInterface.php';
 
-class FileCache implements CacheInterface {
+class RadisCache implements CacheInterface {
     public function set (String $keys, $values){
         echo 'Calling method'. __METHOD__.PHP_EOL;
     }
