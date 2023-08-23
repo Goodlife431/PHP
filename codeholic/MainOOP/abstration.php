@@ -67,4 +67,12 @@ class Rectangle extends Shape {
 
 }
 
+$t = new Triangle('red', '5','2');
+$c = new Circle('red', '20',);
+$r = new Rectangle('red', '10','2');
+
+echo $t->getArea().PHP_EOL;
+echo $c->getArea().PHP_EOL;
+echo $r->getArea().PHP_EOL;
+
 ?>
